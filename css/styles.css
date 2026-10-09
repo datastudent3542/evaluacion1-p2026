@@ -36,6 +36,8 @@ body {
 
 .enlaces {
   color:#555555;
+  size: 1.4rem;
+  display: flex;
 }
 
 /* Hero */
