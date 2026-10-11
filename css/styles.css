@@ -24,39 +24,277 @@ body {
   font-size: 1.6rem;
 }
 
-/* Navbar */
+.container {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.contenido {
+  display: flex;
+  justify-content: space-between;
+}
+
+/** Navbar **/
 .navbar {
-  background-color:#ffffff;
-  height: 1.6rem;
+  background-color: #ffffff;
+  padding: 1.6rem 0;
+  border-bottom: 0.1rem;
+  display: flex; /*  */
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .logo-navbar {
+  font-size: 1.6rem;
   color: #1a1a1a;
 }
 
 .enlaces {
-  color:#555555;
+  display: flex;
+}
+
+.enlaces li {
+  margin-left: 2.8rem;
+  list-style: none;
+}
+
+.enlaces li a {
+  text-decoration: none;
+  color: #555555;
+  font-size: 1.4rem; 
 }
 
 /* Hero */
 .hero {
-  background-color:#000000;
-  size: 6.4rem;
+  background-color: #000000;
+  padding: 6.4rem 0;
 }
 
-.titulo-linea1 {
-  color:#ffffff;
-  size: 4rem;
+.titulo1 {
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight:500
 }
 
-.titulo-linea2 {
-  color:#c0392b;
-  size: 4rem;
+.titulo2 {
+  color: #c0392b;
+  font-size: 4rem;
+  font-weight: 500;
 }
 
-.btn-rojo {
-  background-color:#c0392b;
-  color:#ffffff;
-  padding: 1.6rem 2.8rem;
-  border-radius:0.6rem;
+.hero-parrafo {
+  color: #888888;
+  font-size: 1.6rem;
+  font-weight: 200;
+  padding-bottom: 2.8rem;
+}
+
+.boton {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.4rem;
+  padding: 1rem 2.4rem;
+  border-radius: 0.6rem;
+}
+
+.boton-rojo {
+  background-color: #c0392b;
+}
+
+/** Menú **/
+.menu {
+  background-color: #ffffff;
+  padding: 4.8rem 0;
+}
+
+.titulo-menu {
+  color: #1a1a1a;
+  font-size: 2.6rem;
+  font-weight: 400;
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
+}
+
+.tarjeta {
+  border: solid #e0ddd5;
+  border-radius: 1rem;
+  width: 33.33%;
+}
+
+.foto {
+  height: 20rem;
+}
+
+.texto-tarjeta {
+  padding: 1.6rem;
+}
+
+.nombre-producto {
+  color: #1a1a1a;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.descripcion {
+  color: #555555;
+  font-size: 1.4rem;
+}
+
+.menu-precio {
+  color: #c0392b;
+  font-size: 1.6rem;
+}
+
+/** Los más pedidos **/
+.mas-pedidos {
+  background-color: #f2f0eb;
+  padding: 4.8rem 0;
+  display: flex;
+}
+
+.pedidos-parrafo {
+  color: #555555;
+  font-size: 1.6rem;
+}
+
+.columna-izquierda {
+  width: 30%;
+  padding: 4.8rem;
+}
+
+.lista {
+  width: 65%;
+}
+
+.línea-items {
+  border-bottom: solid #e0ddd5;
+  font-size: 0.1rem;
+  padding: 1.2rem;
+}
+
+.foto2 {
+  size: 6rem 6rem;
+  border-radius: 0.8rem;
+}
+
+.precio-pedido {
+  color: #c0392b bold;
+  font-size: 1.6rem;
+}
+
+/** Sobre nosotros **/
+.nosotros {
+  background-color: #ffffff;
+  display: flex;
+}
+
+.nosotros div {
+  padding: 4.8rem 0;
+  flex-basis: 50%;
+}
+
+.nosotros-parrafo {
+  color: #555555;
+  font-size: 1.6rem;
+  font-weight: 400;  
+}
+
+.nosotros-panel {
+  border: solid #e0ddd5;
+  border-radius: 1rem;
+  width: 45%;
+}
+
+.numero {
+  color: #1a1a1a;
+  font-size: 3rem;
+  padding: 2.4rem 1.6rem;
+}
+
+.nosotros-descripcion {
+  color: #555555;
+  font-size: 1.3rem;
+  padding: 2.4rem 1.6rem;
+}
+
+/** Contacto **/
+.contacto {
+  background-color: #f2f0eb;
+  padding: 4.8rem 0;
+}
+
+.contacto h2 {
+  width: 40%;
+}
+
+.contacto div {
+  flex-basis: 50%
+}
+
+.contacto-datos {
+  color: #555555;
+  font-size: 1.6rem 1rem;
+  list-style: none;
+  width: 40%;
+}
+
+.tarjeta-formulario {
+  background-color: #ffffff;
+  border: solid #e0ddd5;
+  width: 50%;
+  padding: 2.4rem;
+  border-radius: 1rem;
+}
+
+.etiquetas-label {
+  color: #555555;
+  font-size: 1.4rem;
+}
+
+.campos-input {
+  border-color: #e0ddd5;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  margin: 1.6rem 0;
+}
+
+.boton-contacto {
+  color: #c0392b;
+  padding: 1.2rem;
+  border-radius: 0.6rem;
+}
+
+/** Footer **/
+.footer {
+  background-color: #111111;
+  padding: 3.6rem 2rem;
+}
+
+.footer-titulo3 {
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+.footer-titulo4 {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+.parrafo-lista {
+  color:#888888;
+  font-size: 1.6rem;
+}
+
+.columna-marca {
+  width: 40%;
+}
+
+.linea-copyright {
+  color: #222222;
+  margin-bottom: 0.1rem 1.6rem;
+}
+
+.copyright {
+  color: #888888;
+  font-size: 1.3rem;
 }
